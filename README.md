@@ -1,4 +1,38 @@
-## Introduction
+## Instructions
+This readme describes the five programs used to complete the Exploratory Data Analysis -- Week 1 project.  Asumes that the Electric Power consumption data has been downloaded and (uncompressed) and stored in the working directory.
+
+# getData(nbRows)
+* nbRows defaults to -1 -- which is all rows.  Specify a value to improve load time.
+* getData returns a dataframe
+
+# plot1(dataFrame, standAone = T)
+* dataFrame is an optional parameter containing the electical power consumption data to plot.
+* If no parameter is specificed, it will call getData().
+* standAlone -- Create the 1x1 grid and save the PNG file.  False means it is being called from the plot 4 function, so it should not setup grid or save file.
+* Displays histogram and creates a pgn file (below: plot1.pgn) 
+![plot of chunk plot1](./plot1.png) 
+
+# plot2(dataFrame, standAone = T)
+* dataFrame is an optional parameter containing the electical power consumption data to plot.
+* If no parameter is specificed, it will call getData().
+* standAlone -- Create the 1x1 grid and save the PNG file.  False means it is being called from the plot 4 function, so it should not setup grid or save file.
+* Displays a line chart (Global Active Power + Day of Week) and creates a pgn file (below: plot2.pgn)
+![plot of chunk plot2](./plot2.png) 
+
+# plot3(dataFrame, standAone = T)
+* dataFrame is an optional parameter containing the electical power consumption data to plot.
+* If no parameter is specificed, it will call getData().
+* standAlone -- Create the 1x1 grid and save the PNG file.  False means it is being called from the plot 4 function, so it should not setup grid or save file.
+* Displays a line chart (Engery Sub reading + Day of Week) and creates a pgn file (below: plot3.pgn)
+![plot of chunk plot3](./plot3.png) 
+
+# plot4(dataFrame)
+* dataFrame is an optional parameter containing the electical power consumption data to plot.
+* If no parameter is specificed, it will call getData().
+* Displays a chart grid (Global Active Power + Day of Week; Voltage + Day of Week; Engery Sub Metering + Day of Week; Global Reactive Power + Day of Week) and creates a pgn file (below: plot4.pgn)
+![plot of chunk plot5](./plot4.png) 
+
+## Introduction -- From Original ReadMe
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
